@@ -184,6 +184,52 @@ h1 {
   font-weight: 700;
 }
 
+.table-wrapper {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  background: #fbfcfe;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+
+.comparison-table thead th {
+  background: #dde7f4;
+  color: var(--headline);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: #f4f7fb;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-note {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  background: var(--accent-soft);
+  border-left: 4px solid var(--headline);
+  font-weight: 600;
+}
+
 .graph-figure {
   margin: 0;
   padding: 1rem;
@@ -255,6 +301,11 @@ h1 {
 
   .content-section p {
     font-size: 1rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.85rem;
   }
 
   .graph-figure {
