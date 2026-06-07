@@ -185,37 +185,61 @@ h1 {
 }
 
 .table-wrapper {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   overflow-x: auto;
+  border: 1px solid rgba(20, 86, 160, 0.12);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
+  box-shadow: 0 12px 30px rgba(21, 31, 43, 0.06);
 }
 
 .comparison-table {
   width: 100%;
   min-width: 720px;
   border-collapse: collapse;
-  background: #fbfcfe;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
+  background: transparent;
 }
 
 .comparison-table th,
 .comparison-table td {
-  padding: 1rem;
+  padding: 1.1rem 1rem;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid var(--border);
 }
 
 .comparison-table thead th {
-  background: #dde7f4;
+  background: linear-gradient(180deg, #eaf1fa 0%, #dbe7f6 100%);
   color: var(--headline);
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 700;
+  font-size: 1rem;
+  border-bottom: 2px solid #b8cae2;
+}
+
+.comparison-table thead th:first-child {
+  width: 19%;
+}
+
+.comparison-table thead th:nth-child(2),
+.comparison-table thead th:nth-child(3) {
+  width: 40.5%;
+}
+
+.comparison-table tbody td:first-child {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  color: var(--headline);
+  background: rgba(20, 86, 160, 0.05);
+  white-space: nowrap;
 }
 
 .comparison-table tbody tr:nth-child(even) {
   background: #f4f7fb;
+}
+
+.comparison-table tbody tr:hover {
+  background: #eef4fb;
 }
 
 .comparison-table tbody tr:last-child td {
@@ -224,10 +248,13 @@ h1 {
 
 .table-note {
   margin-top: 1rem;
-  padding: 0.9rem 1rem;
-  background: var(--accent-soft);
+  padding: 1rem 1.1rem;
+  background: linear-gradient(180deg, #edf4fd 0%, #e3edf9 100%);
+  border: 1px solid rgba(20, 86, 160, 0.14);
   border-left: 4px solid var(--headline);
+  border-radius: 12px;
   font-weight: 600;
+  color: #24313f;
 }
 
 .graph-figure {
@@ -306,6 +333,10 @@ h1 {
   .comparison-table th,
   .comparison-table td {
     padding: 0.85rem;
+  }
+
+  .comparison-table tbody td:first-child {
+    white-space: normal;
   }
 
   .graph-figure {
